@@ -4,7 +4,7 @@ public class Sale implements Offer{
     private String size = new String();
     private Integer price = 0;
 
-    Sale(String size, Integer price){
+    public Sale(String size, Integer price){
         this.size = size;
         this.price = price;
     }

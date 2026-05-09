@@ -5,7 +5,7 @@ public class Bid implements Offer {
     private String size = new String();
     private Integer bid = 0;
 
-    Bid(String size, int bid){
+    public Bid(String size, int bid){
         this.size = size;
         this.bid = bid;
     }
