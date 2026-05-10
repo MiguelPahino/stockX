@@ -3,6 +3,7 @@ package edu.teamrocket;
 import edu.teamrocket.criteria.*;
 import edu.teamrocket.item.*;
 import edu.teamrocket.offer.*;
+import java.util.List;
 
 /**
  * StockX nació en Detroit, y allí siguen haciendo
