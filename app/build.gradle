@@ -54,11 +54,11 @@ tasks.named('test') {
 
 task fatJar(type: Jar) {
     manifest {
-        attributes 'Main-Class' : 'edu.teamrocket.cotbox.Cotbox',
-                   'Package-Title' : 'cotbox',
+        attributes 'Main-Class' : 'edu.teamrocket.Stockx',
+                   'Package-Title' : 'Stockx',
                    'Package-Version': '1.0',
                    'Package-Vendor' : 'dummie.nexus@gmail.com',
-                   'Specification-Title' : 'Cotbox'
+                   'Specification-Title' : 'Stockx'
     }
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
     from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
@@ -67,10 +67,10 @@ task fatJar(type: Jar) {
 
 jar {
     manifest {
-        attributes 'Main-Class' : 'edu.teamrocket.cotbox.Cotbox',
-                   'Package-Title' : 'Cotbox',
+        attributes 'Main-Class' : 'edu.teamrocket.Stockx',
+                   'Package-Title' : 'Stockx',
                    'Package-Version': '1.0',
                    'Package-Vendor' : 'dummie.nexus@gmail.com',
-                   'Specification-Title' : 'Cotbox'
+                   'Specification-Title' : 'Stockx'
     }
 }
