@@ -15,7 +15,7 @@ public class MinAsk implements Criteria{
     public List<Offer> checkCriteria(Item item) {
         return item.offers().stream()
         .filter(x-> x instanceof Ask)
-        .min(Comparator.comparingInt(Offer::value))
+        .min(Offer::compareTo)
         .stream().toList();
     }
     

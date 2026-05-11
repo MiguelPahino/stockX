@@ -21,7 +21,7 @@ public class Max implements Criteria {
     public List<Offer> checkCriteria(Item item) {
         return criteria.get().checkCriteria(item).stream()
         .filter(x -> otherCriteria.get().checkCriteria(item).contains(x))
-        .max(Comparator.comparingInt(Offer::value))
+        .max(Offer::compareTo)
         .stream().toList();
     }
 

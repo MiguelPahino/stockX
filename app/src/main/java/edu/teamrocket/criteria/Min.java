@@ -20,7 +20,7 @@ public class Min implements Criteria{
     public List<Offer> checkCriteria(Item item) {
         return criteria.get().checkCriteria(item).stream()
         .filter(x -> otherCriteria.get().checkCriteria(item).contains(x))
-        .min(Comparator.comparingInt(Offer::value))
+        .min(Offer::compareTo)
         .stream().toList();
     }
 
